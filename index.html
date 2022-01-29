@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedéx</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
     <main>
         <div class="led-top-1"></div>
         <div class="led-top-2"></div>
-        <div class="screen">
+        <div class="screen" id="slider-main">
             <section class="pokemon-card">
                 <div class="background-img">
                     <img class="pokemon-img" src="assets/imgs/001-bulbasaur.png" alt="Bulbasaur">
@@ -31,50 +31,49 @@
             </section>
             <section class="pokemon-card">
                 <div class="background-img">
-                    <img class="pokemon-img" src="assets/imgs/001-bulbasaur.png" alt="Bulbasaur">
+                    <img class="pokemon-img" src="assets/imgs/002-pikachu.png" alt="Bulbasaur">
                 </div>
-                <h4 class="pokemon-number">Nº001</h4>
-                <h2 class="pokemon-name">Bulbasaur</h2>
+                <h4 class="pokemon-number">Nº002</h4>
+                <h2 class="pokemon-name">Pikachu</h2>
                 <div class="pokemon-types">
-                    <span class="pokemon-type grass">
-                        Grass
-                    </span>
-                    <span class="pokemon-type poison">
-                        Poison
+                    <span class="pokemon-type eletric">
+                        Eletric
                     </span>
                 </div>
             </section>
             <section class="pokemon-card">
                 <div class="background-img">
-                    <img class="pokemon-img" src="assets/imgs/001-bulbasaur.png" alt="Bulbasaur">
+                    <img class="pokemon-img" src="assets/imgs/003-squirtle.png" alt="Bulbasaur">
                 </div>
-                <h4 class="pokemon-number">Nº001</h4>
+                <h4 class="pokemon-number">Nº003</h4>
                 
-                <h2 class="pokemon-name">Bulbasaur</h2>
+                <h2 class="pokemon-name">Squirtle</h2>
                 <div class="pokemon-types">
-                    <span class="pokemon-type grass">
-                        Grass
-                    </span>
-                    <span class="pokemon-type poison">
-                        Poison
+                    <span class="pokemon-type water">
+                        Water
                     </span>
                 </div>
             </section>
             <section class="pokemon-card">
                 <div class="background-img">
-                    <img class="pokemon-img" src="assets/imgs/001-bulbasaur.png" alt="Bulbasaur">
+                    <img class="pokemon-img" src="assets/imgs/004-charmander.png" alt="Bulbasaur">
                 </div>
-                <h4 class="pokemon-number">Nº001</h4>
-                <h2 class="pokemon-name">Bulbasaur</h2>
+                <h4 class="pokemon-number">Nº004</h4>
+                <h2 class="pokemon-name">Charmander</h2>
                 <div class="pokemon-types">
-                    <span class="pokemon-type grass">
-                        Grass
-                    </span>
-                    <span class="pokemon-type poison">
-                        Poison
+                    <span class="pokemon-type fire">
+                        Fire
                     </span>
                 </div>
             </section>
+            <div class="screen-buttons">
+                <button class="screen-button" onclick="prev()">
+                    <img class="arrow-button" src="assets/imgs/left-arrow.svg" alt="Left Arrow">
+                </button>
+                <button class="screen-button" onclick="next()">
+                    <img class="arrow-button" src="assets/imgs/right-arrow.svg" alt="Right Arrow">
+                </button>
+            </div>
         </div>
         <div class="led-bottom"></div>
             <div class="sound-lines">
@@ -87,5 +86,6 @@
             </div>
             <div class="cut"></div>
     </main>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -25,6 +25,9 @@ body {
     --poke-name-color: #131313;
     --poke-type-grass: #9bcc50;
     --poke-type-poison: #b97fc9;
+    --poke-type-fire: #ff7300;
+    --poke-type-water: #0088d6;
+    --poke-type-eletric: #eeff00;
 }
 
 
@@ -106,20 +109,20 @@ main h1 {
 
 .screen {
     display: flex;
-    align-items: center;
     width: 100%;
     height: 100%;
 
     border-radius: 5px;
     background: #232323;
     padding: 20px;
+    position: relative;
 }
 
 .pokemon-card {
     width: 270px;
     height: 370px;
 
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 10px;
     padding: 10px;
 }
@@ -149,7 +152,7 @@ main h1 {
 }
 
 .pokemon-types {
-    margin-top: 8px
+    margin-top: 15px
 }
 
 .pokemon-type {
@@ -167,4 +170,47 @@ main h1 {
 
 .poison {
     background-color: var(--poke-type-poison);
+}
+
+.fire {
+    background-color: var(--poke-type-fire);
+}
+
+.water {
+    background-color: var(--poke-type-water);
+}
+
+.eletric {
+    background-color: var(--poke-type-eletric);
+    color: #1b1b1b;
+    font-weight: 500;
+}
+
+/*Sreen Buttons*/
+
+.arrow-button {
+    width: 1.5rem;
+}
+
+.screen-buttons {
+    position: absolute;
+    bottom: 3%;
+    left: 44%;
+    display: flex;
+}
+
+
+.screen-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 5px;
+
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.screen-button:hover {
+    background: #e0e0e0;
 }
