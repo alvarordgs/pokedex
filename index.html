@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
     <main>
-        <div class="led-top-1"></div>
-        <div class="led-top-2"></div>
+        <div class="led-top">
+            <div class="led-top-1"></div>
+            <div class="led-top-2"></div>
+        </div>
         <div class="screen" id="slider-main">
             <section class="pokemon-card">
                 <div class="background-img">
@@ -46,7 +50,7 @@
                     <img class="pokemon-img" src="assets/imgs/003-squirtle.png" alt="Bulbasaur">
                 </div>
                 <h4 class="pokemon-number">Nº003</h4>
-                
+
                 <h2 class="pokemon-name">Squirtle</h2>
                 <div class="pokemon-types">
                     <span class="pokemon-type water">
@@ -66,6 +70,9 @@
                     </span>
                 </div>
             </section>
+        </div>
+        <div class="peripherals-bottom">
+            <div class="led-bottom"></div>
             <div class="screen-buttons">
                 <button class="screen-button" onclick="prev()">
                     <img class="arrow-button" src="assets/imgs/left-arrow.svg" alt="Left Arrow">
@@ -74,8 +81,6 @@
                     <img class="arrow-button" src="assets/imgs/right-arrow.svg" alt="Right Arrow">
                 </button>
             </div>
-        </div>
-        <div class="led-bottom"></div>
             <div class="sound-lines">
                 <ul>
                     <li></li>
@@ -84,8 +89,10 @@
                     <li></li>
                 </ul>
             </div>
-            <div class="cut"></div>
+        </div>
+        <div class="cut"></div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
